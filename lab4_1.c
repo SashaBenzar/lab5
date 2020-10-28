@@ -15,7 +15,7 @@ a[i][j]=Low+rand()%High;
 
 for (int i = 0; i < rowCount; i++) //введення a[0]
 for (int j = 0; j < colCount; j++)
-printf("a[%d][%d]=%d\t", i, j, a[i][j]);
+printf("a[%d][%d]=%d\n", i, j, a[i][j]);
 
 for (int i = 0; i < rowCount; i++) //пошук b[0]
 for (int j = 1; j < colCount; j++){
