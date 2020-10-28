@@ -154,10 +154,10 @@ if(a[i] [3] < min4){
  dob8*=a[i][j];
  }
 }
-
+printf("\n b[i]={ ");
 int b[8]={dob1,dob2,dob3,dob4,dob5,dob6,dob7,dob8}; //відповідь
 for(int f = 0; f < 8; f++) //задача
 {
-  printf("b[%d]=%d\n",f,b[f]);
-}
+  printf("%d ",b[f]);
+}printf("}");
 }
