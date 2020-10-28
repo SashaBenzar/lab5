@@ -1,13 +1,16 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
 #include <math.h>
 #include <time.h>
 
 int main()
 {
-    int a[3][4] = { {3, -2, 4, 9}, {0, 3, 10, 3}, {5, -4, -6, 1} };
-    const int rowCount = 3, colCount = 4;
-
+const int rowCount = 3, colCount = 4;
+int a[rowCount][colCount];
+for (int i = 0; i < rowCount; i++)
+for (int j = 0; j < colCount; j++) { 
+printf("a[%d][%d]=", i, j);
+scanf("%d", &a[i][j]); }
 //перший ряд
 int min1 = a[0][0], mi1 = 0, dob1 = 1, max1 = a[0][0], ma1 = 0, dob2 = 1;
 for (int i = 0; i < rowCount; i++) //введення мінімального та максимального чисел 1 стовбця
