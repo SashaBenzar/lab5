@@ -13,10 +13,12 @@ for (int i = 0; i < rowCount; i++) //вхідні данні
 for (int j = 0; j < colCount; j++)
 a[i][j]=Low+rand()%High;
 
-for (int i = 0; i < rowCount; i++) //введення a[0]
-for (int j = 0; j < colCount; j++)
-printf("a[%d][%d]=%d\n", i, j, a[i][j]);
-
+for (int i = 0; i < rowCount; i++){ //введення a[0]
+for (int j = 0; j < colCount; j++){
+printf("%d\t", a[i][j]);
+}
+printf("\n");
+}
 for (int i = 0; i < rowCount; i++) //пошук b[0]
 for (int j = 1; j < colCount; j++){
 if(a[0][j-1] > a[0][j]){
